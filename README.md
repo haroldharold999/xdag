@@ -21,6 +21,7 @@ Install and run (Linux):
 - Install dependencies:
 
 		ubuntu 18.04
+		
 		$ sudo apt-get install git gcc libssl-dev
 
 - Clone from the git repository:
