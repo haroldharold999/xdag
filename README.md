@@ -1,5 +1,7 @@
-The Dagger (XDAG) cryptocurrency
+The Dagger (IDAG) 
 ================================
+
+一个DAG有向无环图的区块链,分叉自XDAG,修改了POW算法为鸽子币的X16S，增加抗矿机特性.
 
 - Community site: https://xdag.io
 - The Main net was launched January 5, 2018 at 22:45 GMT.
