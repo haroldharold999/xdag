@@ -25,7 +25,7 @@ Install and run (Linux):
 
 - Clone from the git repository:
 
-        $ git clone https://github.com/XDagger/xdag
+        $ git clone https://github.com/iDagger/iDag
 
 - Make:
 
