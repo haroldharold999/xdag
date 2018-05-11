@@ -25,7 +25,7 @@ int xdag_crypt_init(int withrandom)
 {
 	if (withrandom) {
 		uint64_t buf[64];
-		xOPENSSL_ia32_cpuid(xOPENSSL_ia32cap_P);
+		//zzh xOPENSSL_ia32_cpuid(xOPENSSL_ia32cap_P);
 		xdag_generate_random_array(buf, sizeof(buf));
 		xdag_debug("Seed  : [%s]", xdag_log_array(buf, sizeof(buf)));
 		RAND_seed(buf, sizeof(buf));

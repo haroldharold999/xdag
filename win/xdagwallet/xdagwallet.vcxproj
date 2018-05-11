@@ -139,10 +139,11 @@ copy $(SolutionDir)dependencies\x64\msvcr100.dll "$(OutDir)msvcr100.dll" /Y</Com
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>libeay32MD.lib;ssleay32MD.lib;ws2_32.lib;legacy_stdio_definitions.lib;pthreadVC2.lib;nafxcwd.lib;LIBCMTd.lib;xdaglib.lib</AdditionalDependencies>
+      <AdditionalDependencies>libcrypto.lib;libssl.lib;ws2_32.lib;legacy_stdio_definitions.lib;pthreadVC2.lib;nafxcwd.lib;LIBCMTd.lib;xdaglib.lib</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>nafxcwd.lib;LIBCMTd.lib</IgnoreSpecificDefaultLibraries>
       <StackCommitSize>1000000</StackCommitSize>
       <StackReserveSize>40000000</StackReserveSize>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib</AdditionalLibraryDirectories>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
