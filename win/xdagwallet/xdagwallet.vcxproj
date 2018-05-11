@@ -109,11 +109,12 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>libeay32MT.lib;ssleay32MT.lib;pthreadVC2.lib;ws2_32.lib;legacy_stdio_definitions.lib;nafxcw.lib;libcmt.lib;xdaglib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcrypto.lib;libssl.lib;pthreadVC2.lib;ws2_32.lib;legacy_stdio_definitions.lib;nafxcw.lib;libcmt.lib;xdaglib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>nafxcw.lib;libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <StackReserveSize>40000000</StackReserveSize>
       <StackCommitSize>1000000</StackCommitSize>
       <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)thirdparty\lib\x64</AdditionalLibraryDirectories>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -169,10 +170,11 @@ copy $(SolutionDir)dependencies\x86\msvcr100.dll "$(OutDir)msvcr100.dll" /Y</Com
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>libeay32MTd.lib;ssleay32MTd.lib;pthreadVC2.lib;ws2_32.lib;legacy_stdio_definitions.lib;xdaglib.lib;nafxcwd.lib;libcmtd.lib</AdditionalDependencies>
+      <AdditionalDependencies>libcrypto.lib;libssl.lib;pthreadVC2.lib;ws2_32.lib;legacy_stdio_definitions.lib;xdaglib.lib;nafxcwd.lib;libcmtd.lib</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>nafxcwd.lib;libcmtd.lib</IgnoreSpecificDefaultLibraries>
       <StackCommitSize>1000000</StackCommitSize>
       <StackReserveSize>40000000</StackReserveSize>
+      <AdditionalLibraryDirectories>$(SolutionDir)thirdparty\lib\x64</AdditionalLibraryDirectories>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
